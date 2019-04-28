@@ -7,6 +7,13 @@
 *
 */
 
-const remove = () => {};
+import { setState, getState } from "../store";
+
+const remove = (i) => {
+    let tmp = getState();
+    tmp.splice(i, 1);
+    setState(tmp);
+    console.log(getState());
+};
 
 export default remove;

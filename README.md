@@ -16,7 +16,7 @@ Also, if you did not run `git init` yet, now is a good time to
 # Level 0 - Shape model
 
 In the file `./src/fixture.js`, you'll see an unassigned const named `pictures`,
-you will use it to store you "default" pictures (a.k.a: the ones that are part of the fist state of the application).
+you will use it to store you "default" pictures (a.k.a: the ones that are part of the first state of the application).
 
 You must have at least five of them and they should all have the same "shape".
 
