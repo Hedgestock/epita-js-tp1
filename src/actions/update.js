@@ -8,6 +8,12 @@
 *
 */
 
-const update = () => {};
+import { setState, getState } from "../store";
+
+const update = (e, i) => {
+    let tmp = getState();
+    tmp.splice(i, 1, e);
+    setState(tmp);
+};
 
 export default update;
