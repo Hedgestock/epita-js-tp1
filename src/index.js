@@ -24,7 +24,7 @@ const addPictureHandler = () => {
   const url = getInputContents();
 
   // bonus, trim eventual whitespaces and validate content
-  url.trim(); //kind of validated with the onerror handler ?
+  url.trim(); //kind of validated in addition with the onerror handler ?
 
   // use your actions functions to add a new picture
   add(url);

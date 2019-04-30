@@ -1,3 +1,5 @@
+This TP (does this even have a meaning in english ?) has been completed by Arthur PAMART (pamart_a).
+
 # TP0 - Basics
 
 In this TP you will build a small library of actions for handling a Pictures collection and then hook them into the app to make it functionnal.
