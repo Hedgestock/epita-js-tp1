@@ -12,8 +12,12 @@ import { setState, getState } from "../store";
 
 const update = (e, i) => {
     let tmp = getState();
-    tmp.splice(i, 1, e);
-    setState(tmp);
+    if (i < tmp.length && (-i > -tmp.length)) {
+        tmp.splice(i, 1, e);
+        setState(tmp);
+    } else {
+        console.error("update: index out of range");
+    }
 };
 
 export default update;

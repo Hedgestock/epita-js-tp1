@@ -24,7 +24,7 @@ const addPictureHandler = () => {
   const url = getInputContents();
 
   // bonus, trim eventual whitespaces and validate content
-  url.trim(); //kind of validated with the onerror handler ?
+  url.trim(); //kind of validated in addition with the onerror handler ?
 
   // use your actions functions to add a new picture
   add(url);
@@ -41,6 +41,7 @@ const updatePictureHandler = (url, index) => {
   update(url, index);
 
   refreshGrid();
+  // That seems really crappy but I don't have time to do pretty things like modifying the DOM directly. My few attempts failed...
 };
 
 const refreshGrid = () => {
